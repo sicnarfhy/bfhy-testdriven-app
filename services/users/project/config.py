@@ -1,12 +1,13 @@
 # services/users/project/config.py
 
 import os  # new
+import unittest
 
 class BaseConfig:
     """Base configuration"""
     TESTING = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False  # new
-
+    SECRET_KEY = 'my_precious'
 
 class DevelopmentConfig(BaseConfig):
     """Development configuration"""
